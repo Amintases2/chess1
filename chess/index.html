@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>JSChess</title>	
+		<link href="styles.css" rel="stylesheet" type="text/css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			  rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+			  crossorigin="anonymous">
+		<script type="text/javascript"> if (!window.console) console = {log: function() {}}; </script>
+	</head>
+	<body>
+		<header>
+			<h3>JS Chess</h3>
+			<div style="position: absolute; top:100px">
+				<p id="x"></p>
+				<p id="y"></p>
+			</div>
+
+		</header>
+		<div id="FenInDiv">
+			Fen:<br/>
+			<input type="text" id="fenIn"/>		
+			<button type="button" id="SetFen">Set Position</button>			
+		</div>
+		<div class="hider"></div>
+		<div class="whiteChoice">
+			<div class="choice-rank-1">
+				<img class="piece-choice" data-id="5" src="images/wQ.png" alt="">
+				<img class="piece-choice" data-id="4" src="images/wR.png" alt="">
+			</div>
+			<div class="choice-rank-2">
+				<img class="piece-choice" data-id="3" src="images/wB.png" alt="">
+				<img class="piece-choice" data-id="2" src="images/wN.png" alt="">
+			</div>
+
+		</div>
+		<div class="blackChoice">
+			<div class="choice-rank-1">
+				<img class="piece-choice" data-id="11" src="images/bQ.png" alt="">
+				<img class="piece-choice" data-id="10" src="images/bR.png" alt="">
+			</div>
+			<div class="choice-rank-2">
+				<img class="piece-choice" data-id="9" src="images/bB.png" alt="">
+				<img class="piece-choice" data-id="8" src="images/bN.png" alt="">
+			</div>
+		</div>
+		<div id="Board">
+		</div>
+		<div id="EngineOutput">
+			<button type="button" id="NewGameButton">Новая игра</button><br/>
+			<button type="button" id="FlipButton">Повернуть</button><br/>
+			<button type="button" id="TakeButton">Назад</button><br/>
+			<button type="button" id="EditButton">Редактор</button><br/>
+
+			<span id="GameStatus"></span>
+		</div>
+		
+		<script src="js/jquery-1.10.1.min.js"></script>		
+		<script src="js/defs.js"></script>
+		<script src="js/io.js"></script>	
+		<script src="js/board.js"></script>	
+		<script src="js/movegen.js"></script>	
+		<script src="js/makemove.js"></script>		
+		<script src="js/evaluate.js"></script>	
+		<script src="js/pvtable.js"></script>
+		<script src="js/search.js"></script>
+		<script src="js/perft.js"></script>
+		<script src="js/gui.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/drag.js"></script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
